@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h2>This is results of counting</h2>
+    <table border="1">
+        <tr>
+            <th>Address</th>
+            <th>Count</th>
+            <th>HTTP status code</th>
+        </tr>
+    {% for r in results %}
+        <tr>
+            <td>{{r.address}}</td>
+            <td>{{r.words_count}}</td>
+            <td>{{r.http_status_code}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <a href="http://localhost:5000/">Check another website</a>
+</body>
+</html>

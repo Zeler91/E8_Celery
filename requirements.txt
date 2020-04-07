@@ -1,0 +1,9 @@
+flask
+sqlalchemy
+sqlalchemy-migrate
+flask-sqlalchemy
+psycopg2
+requests
+redis
+celery
+gunicorn
